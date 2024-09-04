@@ -1,0 +1,81 @@
+/* 홈 컨테이너 스타일 */
+.homeContainer {
+  justify-content: center;
+}
+
+.titleContainer {
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.productListContainer {
+  margin: 2rem auto 0 auto;
+}
+
+.productListTitleContainer {
+  display: flex;
+}
+.productListTitle {
+  text-decoration: none;
+  font-size: 30px;
+  font-weight: bold;
+  color: inherit;
+}
+
+.moreButton {
+  text-decoration: none;
+  display: inline-block;
+  padding: 7px 15px;
+  border-radius: 30px;
+  background-color: blue;
+  color: white;
+  text-align: center;
+  border: none; 
+  font-size: 13px;
+  transition: background-color 0.3s;
+}
+
+.moreButton:hover {
+  color: white;
+  background-color: #1787ff; /* 호버 시 배경 색상 변경 */
+}
+
+.wrapScorll {
+  width: 100%; /* 부모 요소에 대해 전체 너비를 차지하도록 설정 */
+  overflow-y: hidden; /* 스크롤바 숨기기 */
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+.productList {
+  border-top: 2px solid blue;
+  display: flex;
+  padding: 0;
+  
+}
+
+.productList ul{
+  display: flex;
+  padding: 0;
+}
+
+.productList li {
+  display: inline-block;
+  margin-left: 2rem;
+  margin-top: 2rem;
+}
+
+
+@media screen and (max-width: 480px) {
+  .productListTitle {
+    font-size: 20px; /* 화면이 480px 이하일 때 제목 폰트 크기 조정 */
+  }
+  .productList li {
+    margin: 1rem 3px;
+  }
+  .moreButton {
+    font-size: 11px; /* 화면이 480px 이하일 때 버튼의 폰트 크기 조정 */
+  }
+}

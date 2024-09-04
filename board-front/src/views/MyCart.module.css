@@ -1,0 +1,125 @@
+
+
+.myCartContainer {
+    width: 80%;
+    margin: 5rem auto;
+}
+
+/* MyCart.module.css */
+
+
+.selectAllContainer {
+    text-align: start;
+    margin-bottom: 1rem;
+}
+
+/* styles.module.css */
+.deleteSelectedBtn {
+    margin-left: 1rem;
+    padding: 10px 20px;
+    background-color: #f44336; /* 빨간색 배경 */
+    color: white; /* 흰색 글자 */
+    border: none; /* 테두리 없앰 */
+    border-radius: 5px; /* 모서리 둥글게 */
+    cursor: pointer; /* 마우스 오버 시 커서 변경 */
+    font-weight: bold; /* 글자 굵게 */
+    transition: background-color 0.3s ease; /* 배경색 변경 애니메이션 */
+  }
+  
+.deleteSelectedBtn:hover {
+    background-color: #d32f2f; /* 마우스 오버 시 배경색 어둡게 변경 */
+}
+
+.deleteSelectedBtn:focus {
+    outline: none; /* 클릭 시 테두리 없앰 */
+    box-shadow: 0 0 0 2px rgba(243, 67, 54, 0.5); /* 포커스 시 주변에 그림자 효과 */
+}
+  
+.cartItemList {
+    margin: 0;
+    padding: 0;
+}
+
+.cartItemList li {
+    margin-bottom: 3rem;
+}
+
+.orderContainer {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+}
+
+.orderContainer ul {
+    border: 3px solid #d9d9d9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.orderContainer li {
+    padding: 30px 50px;
+}
+
+.title {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis; 
+}
+
+.op {
+    font-size: 30px;
+}
+.priceTitle {
+    font-size: 20px;
+    font-weight: bold;
+
+}
+
+.price {
+    font-size: 23px;
+    font-weight: bold;
+    color: #004393
+}
+
+.orderBtn {
+    text-decoration: none;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.orderBtn:hover {
+    background-color: #45a049; /* 호버 시 색상 변경 */
+}
+
+@media (max-width: 1280px) {
+    .orderContainer ul {
+        flex-direction: column;
+        padding: 0;
+    }
+    
+    .orderContainer li {
+        padding: 0;
+    }
+
+    .op {
+        transform: rotate(90deg);
+    }
+    
+}
+
+@media (max-width: 780px) {
+    .myCartContainer {
+        width: 100%;
+        padding: 0 3rem;
+    }
+    
+    .cartItemList li {
+        margin: 0;
+    }
+}

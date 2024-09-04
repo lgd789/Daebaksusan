@@ -1,0 +1,100 @@
+.detailLink {
+    text-decoration: none;
+    color: inherit;
+    text-align: start;
+
+}
+
+.detailLink:hover{
+    color: inherit;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    border-radius: var(--border-radius, 0);
+}
+
+.imgContainer {
+    width: var(--w-size, 60%);
+    height: var(--h-size, 250px);
+    position: relative;
+}
+
+.rcmdImg {
+    border-radius: var(--border-radius, 0);
+    width: 100%;
+    height: var(--h-size, 250px);
+}
+
+.rcmdTag {
+    position: absolute;
+    top: 0;
+    width: 20%;
+}
+.rcmdInfo {
+    padding: 2rem;
+    width: var(--w-size, 40%);
+    font-size: var(--font-size, 8px);
+    text-align: start;
+}
+
+.title {
+    font-size: 2.5em;
+    font-weight: bold;
+    margin-bottom: 1em;
+    white-space: nowrap;
+    overflow: hidden; 
+    text-overflow: ellipsis;
+}
+
+
+.beforeprice {
+    font-size: 2em;
+    color: #959595;
+    text-decoration: line-through;
+    margin: 0;
+}
+
+.afterprice {
+    font-size: 3em;
+    font-weight: bold;
+    margin: 0;
+}
+
+
+/* 추가: 미디어 쿼리를 이용한 반응형 스타일 */
+@media screen and (max-width: 1000px) {
+
+    .title {
+        font-size: 2em; /* 수정: 폰트 크기 조정 */
+    }
+
+    .beforeprice, .afterprice {
+        font-size: 1.3em; /* 수정: 폰트 크기 조정 */
+    }
+
+    .afterprice {
+        font-size: 1.7em;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    
+    .imgContainer {
+        width: 100%;
+    }
+
+    .rcmdInfo {
+        width: 100%;
+    }
+    
+    
+    .container {
+        flex-direction: column; /* Set flex direction to column */
+    }
+}
+
+
+
+

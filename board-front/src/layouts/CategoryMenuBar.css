@@ -1,0 +1,27 @@
+.categoryMenuContainer {
+    display: flex;
+    align-items: flex-end;
+}
+
+
+.categoryMenuContainer ul {
+    list-style-type: none; 
+    margin: 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    color:#999;
+}
+
+
+.categoryMenuContainer li:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+.categoryMenuContainer span.divider {
+    padding: 0 10px;
+    color: #999; /* 구분선 색상 설정 */
+}

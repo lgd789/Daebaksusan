@@ -1,0 +1,33 @@
+/* 테이블 헤더 스타일 */
+
+.paymentItemList table {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    border-top: 3px solid #004393;
+    border-collapse: collapse;
+  }
+
+.paymentItemList table th {
+    color: #333;
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+    color: gray;
+    font-size: 14px;
+}
+
+/* 테이블 바디 셀 스타일 */
+.paymentItemList table td {
+    border-bottom: 1px solid #ddd;
+    padding: 5px;
+    text-align: center;
+}
+
+.paymentItemList table tbody .paymentDate {
+    font-size: 18px;
+    font-weight: bold;
+    text-align: left;
+}
+
+

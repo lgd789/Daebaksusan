@@ -1,0 +1,81 @@
+.orderFlow {
+    display: flex;
+    align-items: center; /* 세로 중앙 정렬 */
+    text-align: center;
+    list-style: none; /* 기본 리스트 스타일 제거 */
+    padding: 3rem; /* 기본 패딩 제거 */
+    justify-content: center;
+    background-color: #004393;
+    font-size: 30px;
+    margin-bottom: 3rem;
+}
+
+.orderFlow ul {
+    gap: 20px;
+}
+
+.orderFlow li {
+    display: flex;
+    justify-content: space-between; /* 내용을 양 끝으로 정렬합니다. */
+    align-items: center; /* 세로 중앙 정렬 */
+    margin-bottom: 10px; /* 각 항목 사이의 간격 */
+}
+
+.activeText {
+    color: white; /* 현재 스텝에 해당하는 텍스트 색상 */
+}
+
+.inactiveText {
+    color: grey; /* 나머지 스텝의 텍스트 색상 */
+}
+
+.stepContent {
+    align-items: center;
+}
+
+.activeArrow, .inactiveArrow {
+    margin: 0 3rem;
+    color: grey;
+}
+
+.activeArrow {
+    color: white;
+}
+
+
+.path {
+    padding: 3rem 0;
+}
+
+.path ul {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 20px; 
+}
+
+.path li {
+    font-size: 14px;
+    color: #999;
+}
+
+.path li:not(:last-child)::after {
+    content: '>'; /* 가상 요소의 내용으로 '>' 추가 */
+    margin-left: 10px; /* '>'와 항목 사이의 간격 조정 */
+    margin-right: 10px; /* '>'와 다음 항목 사이의 간격 조정 */
+}
+
+@media (max-width: 768px) {
+    .orderFlow {
+        display: none;
+
+    }
+    
+}
+
+@media (max-width: 1280px) {
+    .orderFlow {
+        font-size: 15px;
+    }
+    
+}

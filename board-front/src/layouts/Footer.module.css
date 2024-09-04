@@ -1,0 +1,118 @@
+ 
+  footer {
+    width: 100%;
+    background: #343434;
+    padding-top: 50px;
+    color: white
+  }
+  
+  .container {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .footerContent {
+    width: 33.3%;
+  }
+  
+  h3 {
+    font-size: 28px;
+    margin-bottom: 15px;
+    text-align: center;
+  }
+  
+  .footerContent p {
+    width: 190px;
+    margin: auto;
+    padding: 7px;
+  }
+  
+  .footerContent ul {
+    text-align: center;
+  }
+  
+  .footerContentList {
+    padding: 0;
+  }
+  
+  .footerContentList li {
+    width: auto;
+    text-align: center;
+    list-style-type: none;
+    padding: 7px;
+    position: relative;
+  }
+  
+  .footerContentList li::before {
+    content: '';
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 100%;
+    width: 0;
+    height: 2px;
+    background: #f18930;
+    transition-duration: .5s;
+  }
+  
+  .footerContentList li:hover::before {
+    width: 70px;
+  }
+  
+  .socialIcons {
+    text-align: center;
+    padding: 0;
+  }
+  
+  .socialIcons li {
+    display: inline-block;
+    text-align: center;
+    padding: 5px;
+  }
+  
+  .socialIcons i {
+    color: white;
+    font-size: 25px;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: #f18930;
+  }
+  
+  .socialIcons i:hover {
+    color: #f18930;
+  }
+  
+  .bottomBar {
+    background: #f18930;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 50px;
+  }
+  
+  .bottomBar p {
+    color: #343434;
+    margin: 0;
+    font-size: 16px;
+    padding: 7px;
+  }
+  
+  
+/* 반응형 추가 */
+@media (max-width: 768px) {
+  .container {
+    flex-wrap: wrap;
+  }
+  
+  .footerContent {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}

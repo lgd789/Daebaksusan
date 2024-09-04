@@ -1,0 +1,122 @@
+.detailLink {
+    text-decoration: none;
+    color: inherit;
+    text-align: start;
+    display: flex;
+    justify-content: center;
+}
+
+.detailLink:hover{
+    color: inherit;
+}
+.productInfoCard {
+    width: var(--card-size, 255px); /* 기본값 100% */
+    font-size: var(--card-font-size, 7px); /* 기본값 16px */
+}
+
+.productInfoCard:hover {
+    transform: scale(1.02);
+}
+
+.productImgWrapper {
+    position: relative;
+    display: inline-block; /* 또는 다른 레이아웃에 맞게 조정 */
+}
+.productImg {
+    border-radius: 10px;
+    width: var(--card-size, 255px);
+    height: var(--card-size, 255px);
+}
+
+.bestProductIcon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 25%;
+}
+
+.productInfo {
+    margin: 0;
+    
+}
+.productTitle {
+    font-size: 2.5em;
+    font-weight: bold;
+    margin: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.productSp {
+    font-size: 2em;
+    margin-bottom: 5px;
+    color: #999;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    height: 2em;
+}
+
+.productPrice {
+    display: flex;
+    align-items: flex-end;
+    margin: 0;
+}
+
+.productDiscount {
+    font-size: 3em;
+    font-weight: bold;
+}
+
+.productPriceBefore {
+    font-size: 2em;
+    color: #959595;
+    margin-left: 10px;
+    text-decoration: line-through;
+    text-decoration-color: #959595;
+}
+
+.discountRateBox {
+    background-color: #3498db;
+    color: white;
+    border-radius: 5px;
+    padding: 3px 5px;
+    font-size: 0.8em;
+    margin-right: 10px;
+}
+
+@media (max-width: 1280px) {
+    .productInfoCard {
+        width: 180px;
+    }
+  
+}
+@media screen and  (max-width: 1024px) {
+    .productInfoCard {
+        width: 180px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .productInfoCard {
+        width: 200px;
+    }
+    .productInfoCard {
+        font-size: 5px;
+    }
+    
+    .productPriceBefore {
+        margin-left: 5px;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .productImg {
+        width: 150px;
+        height: 150px;
+    }
+    .productInfoCard {
+        width: 150px; 
+    }
+}

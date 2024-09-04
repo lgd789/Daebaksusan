@@ -1,0 +1,8 @@
+
+.slick-prev:before {
+    color: black; /* 이전 화살표 색상을 빨간색으로 변경 */
+}
+
+.slick-next:before {
+    color: black; /* 다음 화살표 색상을 파란색으로 변경 */
+}

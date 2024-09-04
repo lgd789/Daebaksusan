@@ -1,0 +1,54 @@
+/* Sidebar.css */
+.recentProductsContainer {
+    width: 100px; /* 사이드바 너비를 작게 설정 */
+    background-color: white;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* 상자 그림자 추가 */
+    border-radius: 8px; /* 모서리 둥글게 */
+}
+.title {
+    font-size: 15px;
+    text-align: center;
+    margin: 10px 0px;
+    color: rgb(29, 78, 216);
+    font-weight: bold;
+}
+
+.recentProductsContainer ul {
+    max-height: 265px; /* 최대 높이 설정, 실제 사용 조건에 맞게 조정 필요 */
+    overflow-y: hidden; /* 세로 스크롤 활성화 */
+    scroll-behavior: smooth;
+    list-style: none; /* 기본 리스트 스타일 제거 */
+    margin: 0;
+    padding: 0;
+    display: flex; /* flexbox를 사용하여 아이템들을 나열 */
+    flex-direction: column; /* 아이템들을 세로로 나열 */
+    gap: 20px; /* 아이템 사이 간격 */
+}
+
+.recentProductsContainer li {
+    display: flex;
+    justify-content: center;
+}
+
+.recentProductImg {
+    width: 75px; /* 부모 컨테이너에 꽉 차게 조정 */
+    height: 75px; /* 이미지의 원래 비율 유지 */
+    border-radius: 8px; /* 이미지 모서리 둥글게 */
+}
+
+/* 추가: 호버 효과 */
+.recentProductsContainer ul li:hover {
+    cursor: pointer;
+}
+
+.buttonContainer {
+    margin: 0.5rem 0rem;
+    display: flex;
+    justify-content: space-around;
+    font-size: 13px;
+}
+
+.scrollButton{
+    
+}

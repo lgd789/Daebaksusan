@@ -1,0 +1,160 @@
+.quickCartBar {
+    width: 100%;
+    bottom: 0;
+    background-color: whitesmoke;
+    position: fixed;
+    border-top: 3px solid #1d4ed8;
+    z-index: 10;
+}
+
+.quickOrderbutton, .quickCartbutton {
+    width: auto;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    color: #ffffff;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.btnQuickCart {
+    width: 50px;
+    height: auto;
+    /* background-color: blue; */
+    cursor: pointer;
+    border-radius: 50%;
+    position: absolute;
+    top: -25px;
+    left: 150px;
+}
+
+
+.quickCartContainer, .quickCartOff {
+    max-height: 35px;
+    transition: max-height 0.5s ease-in-out;
+}
+
+.quickCartOn, .quickCartOff {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-height: 250px;
+}
+
+.quickCartOff {
+    font-size: 20px;
+    font-weight: bold;
+    padding-left: 300px;
+    color: #004393;
+    justify-content: start;
+}
+
+.show {
+    max-height: 250px;
+}
+
+.hidden {
+    display: none;
+}
+
+
+.cartListContainer, .moveButton {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.cartItemContainer {
+    display: flex;
+}
+
+.checkboxContainer {
+    margin-right: 10px;
+}
+
+.productList {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    margin-right: 2rem;
+    display: flex;
+    gap: 20px;
+}
+
+.productList li {
+    display: inline-block;
+}
+
+
+.quantityContainer {
+    text-align: center;
+    font-size: 11px;
+}
+
+.quantityButton, .customCheckbox {
+    cursor: pointer;
+}
+
+.quantityButton {
+    margin: 0 0.2rem;
+    padding: 0 3px;
+    border: 1px solid #ccc;
+    background-color: #f5f5f5;
+}
+
+.quickOrderbutton:hover {
+    background-color: #0056b3;
+}
+
+.quantityButton:hover, .quickCartbutton:hover {
+    background-color: #e2e2e2;
+}
+
+
+.checkboxLabel {
+    top: 0;
+    left: 0;
+    height: 12px;
+    width: 12px;
+    background-color: #eee;
+    border: 1px solid black;
+}
+
+.totalPriceContainer {
+    margin: 3rem;
+    color: #004393;
+    font-weight: bold
+}
+
+.totalPriceTitle {
+    font-size: 18px;
+}
+
+.totalPrice {
+    font-size: 25px;
+}
+
+.quickOrderbutton {
+    background-color: #007bff;
+}
+
+.quickCartbutton {
+    background-color: #8a8c8f;
+    margin-top: 0.5rem;
+}
+
+.quickCartbutton:hover {
+    background-color: #696a6b;
+}
+
+.option {
+    color: #9CA3AF;
+    font-size: 10px;
+}
+@media (max-width: 1000px) {
+    .quickCartBar {
+        display: none;
+    }
+}

@@ -1,0 +1,79 @@
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* @font-face {
+  font-family: "NanumSquareNeoOTF-Rg";
+  font-weight: normal;
+  src: url("./font/NanumSquareNeoOTF-Rg.otf") format("truetype");
+} */
+
+.APP {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.Router {
+  margin-top: 120px;
+}
+
+.Footer {
+  margin-bottom: 35px;
+}
+
+@media screen and (max-width: 900px) {
+  .Router {
+    margin-top: 60px;
+  }
+
+  .Footer {
+    margin-bottom: 50px;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.animateSlideUp {
+  animation: slideUp 1.5s ease-out forwards;
+}

@@ -1,0 +1,43 @@
+.container {
+    width: 0%;
+    margin: 0 auto;
+}
+
+
+.path {
+    padding: 3rem 0;
+}
+
+.path ul {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 20px; 
+}
+
+
+.path li {
+    font-size: 14px;
+    color: #999;
+}
+
+.path li:not(:last-child)::after {
+    content: '>'; /* 가상 요소의 내용으로 '>' 추가 */
+    margin-left: 10px; /* '>'와 항목 사이의 간격 조정 */
+    margin-right: 10px; /* '>'와 다음 항목 사이의 간격 조정 */
+}
+
+.title {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.paymentContainer {
+    width: 50%;
+}
+.paymentItemList li {
+    padding: 15px;
+    border-radius: 30px;
+    border: 1px solid #999;
+    margin-bottom: 3rem;
+}

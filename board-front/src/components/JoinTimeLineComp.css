@@ -1,0 +1,79 @@
+.timeline-container {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+.timeline-item {
+  display: flex;
+  align-items: center;
+}
+
+.circle {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #ddd;
+  margin-left: 10px;
+  z-index: 40;
+}
+
+.completed .circle {
+  background-color: blue; /* 완료된 스텝의 동그라미 색상 변경 */
+}
+
+.step {
+  display: flex; /* Flexbox 사용 */
+  align-items: center; /* 수직 중앙 정렬 */
+  position: relative; /* 선을 그리기 위해 필요 */
+  padding: 20px 0; /* 상하 여백 */
+  justify-content: flex-start;
+}
+
+.step:not(:last-child)::after {
+  content: '';
+  position: absolute;
+
+  left: 81px; /* 동그라미 중앙에 맞추기 */
+  top: 0px; /* 동그라미 바닥에서 시작 */
+  bottom: 0px; /* 다음 동그라미 꼭대기까지 */
+  width: 1px; /* 선의 굵기 */
+  background-image: linear-gradient(to bottom, gray 50%, transparent 50%);
+  background-size: 1px 4px;
+}
+
+.description {
+  font-size: 12px; /* 설명의 글꼴 크기 */
+  color: #666; /* 설명의 글꼴 색상 */
+  margin-top: -15px; /* 스텝 이름과의 간격 */
+}
+
+
+@media only screen and (max-width: 768px) {
+  .timeline-container {
+    position: relative;
+    flex-direction: row;
+  }
+
+  .step {
+    font-size: 15px;
+    padding: 5px 0;
+  }
+  .description {
+    font-size: 10px;
+    margin-top: -5px;
+  }
+
+  .circle {
+    width: 15px;
+    height: 15px;
+  }
+
+  .step:not(:last-child)::after {
+    left: 76px;
+  }
+
+}

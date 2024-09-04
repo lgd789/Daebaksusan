@@ -1,0 +1,13 @@
+.HomeBannerContainer {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.HomeBannerContainer Link {
+    width: 33%;
+}
+.HomeBannerImg{
+    width: 100%;
+    height: 500px;
+}

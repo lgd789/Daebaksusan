@@ -1,0 +1,72 @@
+{"properties": [
+  {
+    "name": "iamport.key",
+    "type": "java.lang.String",
+    "description": "A description for 'iamport.key'"
+  },
+  {
+    "name": "iamport.secret",
+    "type": "java.lang.String",
+    "description": "A description for 'iamport.secret'"
+  },
+  {
+    "name": "frontend.url",
+    "type": "java.lang.String",
+    "description": "A description for 'frontend.url'"
+  },
+  {
+    "name": "aws.s3.bucket",
+    "type": "java.lang.String",
+    "description": "A description for 'aws.s3.bucket'"
+  },
+  {
+    "name": "aws.s3.region",
+    "type": "java.lang.String",
+    "description": "A description for 'aws.s3.region'"
+  },
+  {
+    "name": "aws.s3.access.key",
+    "type": "java.lang.String",
+    "description": "A description for 'aws.s3.access.key'"
+  },
+  {
+    "name": "aws.s3.secret.key",
+    "type": "java.lang.String",
+    "description": "A description for 'aws.s3.secret.key'"
+  },
+  {
+    "name": "aws.cloudfront.url",
+    "type": "java.lang.String",
+    "description": "A description for 'aws.cloudfront.url'"
+  },
+  {
+    "name": "kakao.authorization.redirect-uri",
+    "type": "java.lang.String",
+    "description": "A description for 'kakao.authorization.redirect-uri'"
+  },
+  {
+    "name": "naver.authorization.redirect-uri",
+    "type": "java.lang.String",
+    "description": "A description for 'naver.authorization.redirect-uri'"
+  },
+  {
+    "name": "jwt.secret.token",
+    "type": "java.lang.String",
+    "description": "A description for 'jwt.secret.token'"
+  },
+  {
+    "name": "jwt.secret.expired.ms",
+    "type": "java.lang.String",
+    "description": "A description for 'jwt.secret.expired.ms'"
+  },
+  {
+    "name": "jwt.refresh.token",
+    "type": "java.lang.String",
+    "description": "A description for 'jwt.refresh.token'"
+  },
+  {
+    "name": "jwt.refresh.expired.ms",
+    "type": "java.lang.String",
+    "description": "A description for 'jwt.refresh.expired.ms'"
+  }
+]}

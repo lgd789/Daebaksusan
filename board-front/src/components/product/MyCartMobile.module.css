@@ -1,0 +1,95 @@
+/* 체크박스와 라벨 정렬 */
+.mobileContainer {
+    width: 100%;
+    padding: 1rem;
+    align-items: start;
+    border: 1px solid #e0e0e0;
+    display: none;
+    border-radius: 16px;
+    box-shadow: 0px 3px 9px rgba(0,0,0,.05);
+}
+
+.checkBox {
+    margin-right: 5px;
+}
+  /* 체크박스 디자인 */
+.custom_checkbox {
+    display: none; /* 실제 체크박스는 화면에서 숨김 */
+}
+
+.checkbox_icon::before {
+    content: '';
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    margin-right: 5px;
+    border: 1px solid #9da3a5;
+    box-sizing: border-box;
+    cursor: pointer;
+    position: relative;
+    background-color: transparent; /* 초기 배경색은 투명 */
+}
+
+/* 체크박스 선택 시 디자인 */
+.custom_checkbox:checked + .checkbox_icon::before {
+    background: url('https://intranet.adef.co.kr/asset/images/ic_check.png') #0b74d6 no-repeat center;
+    border: none; /* 선택 시 테두리 제거 */
+}
+
+.orderInfo {
+    overflow: hidden;
+    white-space: nowrap;
+    width: 100%;
+    text-overflow: ellipsis;
+    text-align: start;
+    margin-left: 2rem;
+}
+
+.orderName {
+    font-weight: 600;
+}
+
+.orderOption {
+    color:#b4b4b4;
+    font-size: 13px;
+}
+
+
+.quantityInput {
+    width: 20px;
+    text-align: center;
+}
+
+.quantityButton {
+    margin: 0 0.2rem 0 0.2rem;
+    padding: 3px 5px;
+    cursor: pointer; 
+    border: 1px solid #ccc;
+    background-color: #f5f5f5;
+}
+
+
+.orderTotal {
+    text-align: end;
+}
+
+.priceInfo {
+    font-size: 12px; 
+    color: #333; /* 원하는 색상으로 변경하세요 */
+    margin-bottom: 8px; /* 아래 여백 조절 */
+}
+
+.priceInfo p {
+    margin: 4px 0; /* 단락 간격 조절 */
+}
+
+.total {
+    font-size: 13px;
+    font-weight: bold;
+}
+
+@media (max-width: 780px) {
+    .mobileContainer {
+        display: flex;
+    }
+}

@@ -1,0 +1,24 @@
+.pointsDetailContainer table {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    border-top: 3px solid #004393;
+    border-collapse: collapse;
+  }
+
+.pointsDetailContainer table th {
+    color: #333;
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    color: gray;
+    font-size: 14px;
+}
+
+.pointsDetailContainer table td {
+    border-bottom: 1px solid #ddd;
+    padding: 20px 5px ;
+    text-align: center;
+    font-size: 14px;
+}

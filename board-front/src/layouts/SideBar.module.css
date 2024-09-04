@@ -1,0 +1,16 @@
+
+.sideBarContainer {
+    position: absolute;
+   
+}
+
+.sideBar1 {
+    margin-bottom: 50px;
+}
+
+
+@media (max-width: 1280px) {
+    .sideBarContainer {
+        display: none;
+    }
+}
